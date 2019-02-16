@@ -87,13 +87,15 @@ public class myLinkedList<E extends Comparable<E>>{
  
   public int searchElement(E targetElement){//test if a target element can be found on the list, return the occurrences of the target element	  
 	  Node<E> temp = this.head;
+	  int i = 0;
 	  while(temp!=null) {
 	  if(temp.getItem()==targetElement) {
-			  //System.out.println("Node "+temp+" has this value."); test to make sure it was getting both 1's and not the same one twice
+		//System.out.println("Node "+temp+" has this value."); test to make sure it was getting both 1's and not the same one twice
+	  	i++;
 	  }
 		  temp=temp.getNext();
 	  }
-	return size();
+	return i;
 	} 
   
   public void removeElement(E targetElement){//remove all target element that can be found on the list
