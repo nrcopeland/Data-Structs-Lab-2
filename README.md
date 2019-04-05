@@ -1,1 +1,1 @@
-Lab 1 and 2 are 100% correct.
+Lab 1, 2, and 3 are 100% correct.
